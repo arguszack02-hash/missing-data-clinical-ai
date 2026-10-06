@@ -1,0 +1,49 @@
+family,dimension,dim,score,justification
+Listwise deletion,Uncertainty quantification,UQ,1,no imputation; SEs valid only under MCAR (Little & Rubin 2019)
+Listwise deletion,Interpretability / transparency,INT,5,rule trivially stated
+Listwise deletion,MNAR robustness,MNAR,1,biased under MAR/MNAR in general (Little & Rubin 2019; Sterne et al. 2009)
+Listwise deletion,Bias / fairness safeguards,FAIR,1,drops patients differentially by subgroup (Jeanselme et al. 2022)
+Listwise deletion,Computational efficiency,COMP,5,no fitting
+Listwise deletion,Regulatory auditability,AUD,4,standard; complete-case reporting in TRIPOD (Collins et al. 2015)
+Mean / regression,Uncertainty quantification,UQ,1,single value; understates SEs (Little & Rubin 2019)
+Mean / regression,Interpretability / transparency,INT,4,regression form inspectable (mean: level 5)
+Mean / regression,MNAR robustness,MNAR,1,mean biased unless MCAR (Little & Rubin 2019)
+Mean / regression,Bias / fairness safeguards,FAIR,1,shrinks subgroups to global mean (Jeanselme et al. 2022)
+Mean / regression,Computational efficiency,COMP,5,closed form
+Mean / regression,Regulatory auditability,AUD,3,trivially reproducible; no diagnostics standard
+Multiple Imputation (MICE/FCS),Uncertainty quantification,UQ,5,Rubin's rules; guidance (Rubin 1987; Sterne et al. 2009; White et al. 2011)
+Multiple Imputation (MICE/FCS),Interpretability / transparency,INT,4,per-variable conditional models (van Buuren et al. 2006; van Buuren & Groothuis-Oudshoorn 2011)
+Multiple Imputation (MICE/FCS),MNAR robustness,MNAR,4,delta/reference-based (pattern-mixture) MI (Cro et al. 2020; Carpenter & Kenward 2013)
+Multiple Imputation (MICE/FCS),Bias / fairness safeguards,FAIR,3,subgroup terms/interactions in imputation model (White et al. 2011)
+Multiple Imputation (MICE/FCS),Computational efficiency,COMP,3,m chained fits
+Multiple Imputation (MICE/FCS),Regulatory auditability,AUD,5,mice diagnostics; recommended in trial guidance (National Research Council 2010; van Buuren & Groothuis-Oudshoorn 2011)
+MissForest,Uncertainty quantification,UQ,2,"single imputation; bootstrap needed; MI-variants undercover (Stekhoven & B\""uhlmann 2012; Shadbahr et al. 2023)"
+MissForest,Interpretability / transparency,INT,3,"OOB error per variable, importances (Stekhoven & B\""uhlmann 2012)"
+MissForest,MNAR robustness,MNAR,2,"MAR-based; no sensitivity parameter (Stekhoven & B\""uhlmann 2012)"
+MissForest,Bias / fairness safeguards,FAIR,3,conditions on all variables incl. interactions
+MissForest,Computational efficiency,COMP,3,iterative forests
+MissForest,Regulatory auditability,AUD,3,"open source, OOB diagnostic (Stekhoven & B\""uhlmann 2012)"
+GAIN (GAN),Uncertainty quantification,UQ,3,"stochastic generator draws, no pooling rule (Yoon et al. 2018)"
+GAIN (GAN),Interpretability / transparency,INT,1,adversarial MLP
+GAIN (GAN),MNAR robustness,MNAR,2,theory under MCAR; uses mask as hint (Yoon et al. 2018)
+GAIN (GAN),Bias / fairness safeguards,FAIR,2,post-hoc audit only
+GAIN (GAN),Computational efficiency,COMP,2,CPU-trainable; unstable training (Wang et al. 2024)
+GAIN (GAN),Regulatory auditability,AUD,2,research code; seeds+weights
+VAE (MIWAE / not-MIWAE),Uncertainty quantification,UQ,3,importance-weighted multiple draws (Mattei & Frellsen 2019)
+VAE (MIWAE / not-MIWAE),Interpretability / transparency,INT,1,deep encoder/decoder
+VAE (MIWAE / not-MIWAE),MNAR robustness,MNAR,4,not-MIWAE models self-masking MNAR (Ipsen et al. 2021)
+VAE (MIWAE / not-MIWAE),Bias / fairness safeguards,FAIR,2,post-hoc audit only
+VAE (MIWAE / not-MIWAE),Computational efficiency,COMP,2,CPU-trainable small/medium
+VAE (MIWAE / not-MIWAE),Regulatory auditability,AUD,2,research code; seeds+weights
+"RNN / Transformer (BRITS, SAITS)",Uncertainty quantification,UQ,2,deterministic; MC-dropout/ensembles external (Cao et al. 2018; Du et al. 2023)
+"RNN / Transformer (BRITS, SAITS)",Interpretability / transparency,INT,1,BRITS recurrent state opaque (SAITS attention: 2)
+"RNN / Transformer (BRITS, SAITS)",MNAR robustness,MNAR,3,masking vectors / decay use missingness pattern (Che et al. 2018; Cao et al. 2018)
+"RNN / Transformer (BRITS, SAITS)",Bias / fairness safeguards,FAIR,2,post-hoc audit only
+"RNN / Transformer (BRITS, SAITS)",Computational efficiency,COMP,1,GPU for clinical-scale EHR (Du et al. 2023; Wang et al. 2024)
+"RNN / Transformer (BRITS, SAITS)",Regulatory auditability,AUD,2,reference implementations; no standard diagnostics (Wang et al. 2024)
+GNN (GRAPE),Uncertainty quantification,UQ,2,deterministic edge prediction (You et al. 2020)
+GNN (GRAPE),Interpretability / transparency,INT,2,explicit bipartite observation graph (You et al. 2020)
+GNN (GRAPE),MNAR robustness,MNAR,2,MAR/MCAR evaluation only (You et al. 2020)
+GNN (GRAPE),Bias / fairness safeguards,FAIR,2,post-hoc audit only
+GNN (GRAPE),Computational efficiency,COMP,2,CPU-trainable small/medium (You et al. 2020)
+GNN (GRAPE),Regulatory auditability,AUD,2,research code; seeds+weights
