@@ -1,0 +1,64 @@
+pmid,year,title,rule_decision,classifier_decision
+24905193,2015,A pattern-mixture model with nonfuture dependence and shift in current missing values.,exclude (E1),include
+25758841,2015,Missing laboratory test data in electronic general practice records: analysis of rheumatoid factor recording in the clinical practice research datalink.,exclude (E1),include
+28061760,2017,Development of an Australian cardiovascular disease mortality risk score using multiple imputation and recalibration from national statistics.,exclude (E1),include
+28352203,2017,Missing data and multiple imputation in clinical epidemiological research.,exclude (E1),include
+28470952,2017,"Coping with missing data in phase III pivotal registration trials: Tolvaptan in subjects with kidney disease, a case study.",exclude (E1),include
+29394191,2018,Implementation of Instrumental Variable Bounds for Data Missing Not at Random.,exclude (E1),include
+33718787,2021,Do Missing Values Influence Outcomes in a Cross-sectional Mail Survey?,exclude (E1),include
+34276792,2021,ImputEHR: A Visualization Tool of Imputation for the Prediction of Biomedical Data.,exclude (E1),include
+34344484,2021,The development and validation of prognostic models for overall survival in the presence of missing data in the training dataset: a strategy with a detailed example.,exclude (E1),include
+36150546,2022,Handling missing data in clinical research.,exclude (E1),include
+36738870,2023,Informative missingness: What can we learn from patterns in missing laboratory data in the electronic health record?,exclude (E1),include
+37203654,2023,DeepTSE: A Time-Sensitive Deep Embedding of ICU Data for Patient Modeling and Missing Data Imputation.,exclude (E1),include
+38482579,2024,Estimating Periodontitis Susceptibility Cases for Epidemiological Studies with Multiple Imputation.,exclude (E1),include
+38810206,2024,Extraction and Imputation of Eastern Cooperative Oncology Group Performance Status From Unstructured Oncology Notes Using Language Models.,exclude (E1),include
+38926718,2024,Electronic medical records imputation by temporal Generative Adversarial Network.,exclude (E1),include
+39318684,2024,The use of imputation in clinical decision support systems: a cardiovascular risk management pilot vignette study among clinicians.,exclude (E1),include
+39448629,2024,Multiple imputation integrated to machine learning: predicting post-stroke recovery of ambulation after intensive inpatient rehabilitation.,exclude (E1),include
+40636794,2022,Multi-feature weight factor extraction and survival risk assessment of hepatocellular carcinoma based on a clinical missing dataset-independent support vector machine.,exclude (E1),include
+41073633,2026,Regulatory Experiences with the Use of Multiple Imputation for Missing Data in a Phase 3 Confirmatory Trial.,exclude (E1),include
+41248222,2025,Minimizing Missing Data in Clinical Trials.,exclude (E1),include
+25663182,2015,Imputation of systematically missing predictors in an individual participant data meta-analysis: a generalized approach using MICE.,exclude (E2),include
+26809812,2016,Multiple imputation of multiple multi-item scales when a full imputation model is infeasible.,exclude (E2),include
+27782817,2016,Assessment of predictive performance in incomplete data by combining internal validation and multiple imputation.,exclude (E2),include
+30203058,2020,Missing data and prediction: the pattern submodel.,exclude (E2),include
+30341708,2019,A comparison of different methods to handle missing data in the context of propensity score analysis.,exclude (E2),include
+32429370,2020,A Novel LSTM for Multivariate Time Series with Massive Missingness.,exclude (E2),include
+33249763,2021,An application of the mixed-effects model and pattern mixture model to treatment groups with differential missingness suspected not-missing-at-random.,exclude (E2),include
+37488709,2023,A self-censoring model for multivariate nonignorable nonmonotone missing data.,exclude (E2),include
+32565213,2020,A cautionary note on the use of the missing indicator method for handling missing data in prediction research.,exclude (E3),include
+40992553,2026,"Improving Risk Prediction in Complex High-Risk Percutaneous Coronary Intervention: Addressing Missing Data, Calibration, and Clinical Utility.",exclude (E3),include
+27199552,2015,Machine Learning Data Imputation and Classification in a Multicohort Hypertension Clinical Study.,exclude (E4),include
+31604610,2019,The missing indicator approach for censored covariates subject to limit of detection in logistic regression models.,exclude (E4),include
+34533286,2023,Clinical and Molecular Findings After Autologous Stem Cell Transplantation or Cyclophosphamide for Scleroderma: Handling Missing Longitudinal Data.,exclude (E4),include
+36304178,2022,Multi-modal Learning with Missing Data for Cancer Diagnosis Using Histopathological and Genomic Data.,exclude (E4),include
+37099704,2023,DeepMicroGen: a generative adversarial network-based method for longitudinal microbiome data imputation.,exclude (E4),include
+37352900,2023,Synergy between imputed genetic pathway and clinical information for predicting recurrence in early stage non-small cell lung cancer.,exclude (E4),include
+37904203,2023,DeepGAMI: deep biologically guided auxiliary learning for multimodal integration and imputation to improve genotype-phenotype prediction.,exclude (E4),include
+39574876,2024,Reducing Information and Selection Bias in EHR-Linked Biobanks via Genetics-Informed Multiple Imputation and Sample Weighting.,exclude (E4),include
+41870128,2026,A cancer-type-aware framework for robust multimodal survival prediction under missing modalities.,exclude (E4),include
+42332139,2026,Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.,exclude (E4),include
+25185878,2015,"A case study of normalization, missing data and variable selection methods in lipidomics.",include,exclude
+32402974,2020,Imputation methods for addressing missing data in short-term monitoring of air pollutants.,include,exclude
+33875162,2021,Data imputation and compression for Parkinson's disease clinical questionnaires.,include,exclude
+34823834,2021,Cardio-ML: Detection of malicious clinical programmings aimed at cardiac implantable electronic devices based on machine learning and a missing values resemblance framework.,include,exclude
+35356492,2022,PARTITIONING AROUND MEDOIDS CLUSTERING AND RANDOM FOREST CLASSIFICATION FOR GIS-INFORMED IMPUTATION OF FLUORIDE CONCENTRATION DATA.,include,exclude
+35993595,2022,Predicting Total Drug Clearance and Volumes of Distribution Using the Machine Learning-Mediated Multimodal Method through the Imputation of Various Nonclinical Data.,include,exclude
+37285863,2023,A unified hybrid transformer for joint MRI sequences super-resolution and missing data imputation.,include,exclude
+37662259,2023,ReMiND: Recovery of Missing Neuroimaging using Diffusion Models with Application to Alzheimer's Disease.,include,exclude
+38202948,2023,Dynamic Tensor Modeling for Missing Data Completion in Electronic Toll Collection Gantry Systems.,include,exclude
+38976465,2025,Unified Multi-Modal Image Synthesis for Missing Modality Imputation.,include,exclude
+40014930,2025,Antimicrobial minimum inhibitory concentrations can be imputed from phenotypic data using a random forest approach.,include,exclude
+40198303,2025,Illuminating the Path to Enhanced Resilience of Machine Learning Models Against the Shadows of Missing Labels.,include,exclude
+40314701,2025,A fast and robust geometric point cloud registration model for orthopedic surgery with noisy and incomplete data.,include,exclude
+40448035,2025,Deep learning-driven modality imputation and subregion segmentation to enhance high-grade glioma grading.,include,exclude
+40526536,2026,DiffM4RI: A Latent Diffusion Model With Modality Inpainting for Synthesizing Missing Modalities in MRI Analysis.,include,exclude
+40785964,2025,The status of Saudi measures of deprivation: A review with policy recommendations on a missing indicator in Saudi epidemiologic research.,include,exclude
+40802824,2025,Image Imputation with conditional generative adversarial networks captures clinically relevant imaging features on computed tomography.,include,exclude
+41103673,2025,Comparison of missing data handling methods for variant pathogenicity predictors.,include,exclude
+41171661,2026,Gaussian Mixture Conditional Variational Recurrent Neural Network for Unified Trajectory Imputation and Prediction.,include,exclude
+41374569,2025,Self-Attention-Based Deep Learning for Missing Sensor Data Imputation in Real-Time Probe Card Monitoring.,include,exclude
+41379846,2025,DynamicSeq2SeqXGB for PM2.5 imputation in extremely sparse environmental monitoring networks.,include,exclude
+41422132,2025,HMLA: A hybrid machine learning approach for enhancing stroke prediction models with missing data imputation techniques.,include,exclude
+41946890,2026,The future of power forecasting: neuromorphic-axolotl hybrid intelligence revolutionizing grid operations through bio-inspired missing data mastery.,include,exclude

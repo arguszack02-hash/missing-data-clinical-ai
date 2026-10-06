@@ -1,0 +1,11 @@
+item,topic,what_to_report,TRIPOD_2015,TRIPOD_AI,PROBAST,STROBE
+1,Extent and pattern,"Missingness per variable and overall, by outcome class and key subgroups; pattern (monotone/intermittent); number of complete cases.",13b,"11, 20b",4.3,"12c, 14b"
+2,Plausible mechanism,"Clinical reasons for missingness (who orders the test, when, why); assumed mechanism per key variable as an untestable assumption, with the variables that make MAR plausible.",9,"11, 26",4.4,12c
+3,Handling method,"Method, software and version, key settings (number of imputations, iterations, conditional models, seeds).",9,"11, 12b",4.4,12c
+4,Imputation model content,Variables and auxiliary variables used; outcome included when imputing development data; interactions/non-linear terms compatible with the analysis model.,9,"11, 12c",4.4,12c
+5,Uncertainty propagation,"How imputation uncertainty reaches estimates and predictions (Rubin's rules, pooled predictions, between-imputation spread).",9,"11, 23a",4.4,12c
+6,Leakage control and evaluation,"Imputer fitted inside resampling on training folds only; performance on the downstream task (discrimination, calibration), not imputation error alone.",10b,"12a, 12c, 23a","4.4, 4.7",—
+7,Deployment strategy,"How missing predictors are handled when the model is applied to a new patient (real-time imputation, pattern submodels, indicators); performance when a predictor is systematically unavailable.",15b,"27a, 12g",—,—
+8,Subgroup and fairness audit,Missingness and performance across sociodemographic and clinical subgroups; mitigation applied.,—,"3c, 7, 14, 23a",—,12b
+9,Sensitivity analysis,Departures from MAR (delta-adjusted or pattern-mixture MI) or alternative handling; effect on conclusions.,—,26,4.4,12e
+10,Reproducibility,"Code, seeds, imputation models; data or synthetic surrogate where permitted.",—,"18e, 18f, 22",—,—

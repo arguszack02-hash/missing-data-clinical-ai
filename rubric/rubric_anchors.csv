@@ -1,0 +1,31 @@
+dimension,dim,level,anchor
+Uncertainty quantification,UQ,1,Returns a single value; no representation of uncertainty about the missing values.
+Uncertainty quantification,UQ,2,"Uncertainty obtainable only by wrapping the method in external resampling (e.g. bootstrap, MC-dropout, ensembles); no native pooling rule."
+Uncertainty quantification,UQ,3,"Natively produces multiple stochastic draws, but no established pooling rule or evidence of near-nominal interval coverage."
+Uncertainty quantification,UQ,4,Multiple draws with an established pooling rule (e.g. Rubin's rules); near-nominal coverage shown in published simulations under MAR.
+Uncertainty quantification,UQ,5,Level 4 and recommended as the uncertainty-propagating approach in clinical methods or reporting guidance.
+Interpretability / transparency,INT,1,Opaque learned model; no component of the imputation rule can be inspected.
+Interpretability / transparency,INT,2,"Partially inspectable learned structure (attention maps, explicit observation graph), but no per-variable model."
+Interpretability / transparency,INT,3,"Non-parametric but inspectable (variable importance, donor neighbours, out-of-bag error per variable)."
+Interpretability / transparency,INT,4,"Explicit per-variable conditional models whose form and coefficients can be printed and checked, with standard diagnostics."
+Interpretability / transparency,INT,5,Rule stated fully in one sentence; no fitted model.
+MNAR robustness,MNAR,1,Biased unless data are MCAR.
+MNAR robustness,MNAR,2,"Valid under MAR (correct model); no MNAR mechanism, sensitivity parameter, or use of missingness pattern."
+MNAR robustness,MNAR,3,Valid under MAR and either supports a standard MNAR sensitivity analysis OR uses the missingness mask/indicators as model input.
+MNAR robustness,MNAR,4,"A published member explicitly models the MNAR mechanism (selection, pattern-mixture or self-masking) under stated identifying assumptions."
+MNAR robustness,MNAR,5,Level 4 and validated on clinical data within an established sensitivity-analysis framework.
+Bias / fairness safeguards,FAIR,1,Known to distort subgroup distributions (e.g. shrinkage to a global value) or to drop subgroups differentially; no audit mechanism.
+Bias / fairness safeguards,FAIR,2,"No built-in subgroup handling; subgroup error audit possible only post hoc, without per-value uncertainty."
+Bias / fairness safeguards,FAIR,3,Can condition explicitly on subgroup variables/interactions and supports post-hoc subgroup error audit.
+Bias / fairness safeguards,FAIR,4,"Level 3 and uncertainty allows subgroup-level interval reporting, with clinical evidence that subgroup-aware imputation reduces disparity."
+Bias / fairness safeguards,FAIR,5,"Explicit fairness constraint or objective built into the imputation, validated on clinical data."
+Computational efficiency,COMP,1,"Deep model needing GPU, extensive tuning and large training sets for clinical-scale data."
+Computational efficiency,COMP,2,Deep or graph model trainable on CPU for small/medium data; tuning required.
+Computational efficiency,COMP,3,Iterative fitting repeated m times or tree ensembles; minutes on 10^4-10^5 rows on CPU.
+Computational efficiency,COMP,4,One fitted model per variable; seconds on 10^4-10^5 rows on CPU.
+Computational efficiency,COMP,5,Closed-form or no fitting.
+Regulatory auditability,AUD,1,No reference implementation or documentation standard.
+Regulatory auditability,AUD,2,"Reference implementation exists; reproducible with seeds and stored weights, but no standard diagnostics."
+Regulatory auditability,AUD,3,Seed-reproducible open-source implementation with some standard diagnostics (e.g. OOB error).
+Regulatory auditability,AUD,4,"Established software with documented diagnostics, and covered by reporting-guideline items."
+Regulatory auditability,AUD,5,Level 4 and named as an accepted primary or sensitivity procedure in regulatory/trial guidance.
