@@ -1,0 +1,10 @@
+simulations/data/set-a/
+simulations/data/*.txt
+simulations/physionet_features.csv
+simulations/sim_raw_*.csv
+simulations/*.tmp
+simulations/case_c_parts/
+rubric/rubric_consensus.csv
+rubric/rubric_agreement_pairs.csv
+__pycache__/
+.venv/
